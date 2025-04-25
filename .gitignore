@@ -3,9 +3,6 @@ node_modules
 .pnp
 .pnp.js
 
-# Testing
-coverage
-
 # Production
 dist
 dist-ssr
@@ -37,3 +34,8 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables
+.env
+.env.*
+!.env.example

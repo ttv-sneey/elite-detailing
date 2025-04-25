@@ -1,8 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 
-// Replace these with your actual Supabase credentials
-const supabaseUrl = 'https://teyteheoxguupdkapsgm.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRleXRlaGVveGd1dXBka2Fwc2dtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDU0OTg5OTEsImV4cCI6MjA2MTA3NDk5MX0.NOw_-zHnfQq7QIQWLPGSV-OKN0eRmMxeTsJewdCAe3o';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 // Create a single supabase client for interacting with your database
 export const supabase = createClient(supabaseUrl, supabaseKey);
